@@ -30,4 +30,12 @@ public class OrderServiceTest {
         Order order = orderService.createOrder(memberId, "itemA", 10000);
         Assertions.assertThat(order.getDiscountPrice()).isEqualTo(1000);
     }
+
+// 필드 인젝션은 셋터가 필요한데.. 그럴거면 셋터를 사용한다. 자바코드로의 테스트 등 유연성이 너무 부족하다.
+// DI 프레임워크에 종속적임
+//    @Test
+//    void filedInjectionTest() {
+//        OrderServiceImpl orderService = new OrderServiceImpl();
+//        orderService.createOrder(1L,"itemA", 10000);
+//    }
 }
