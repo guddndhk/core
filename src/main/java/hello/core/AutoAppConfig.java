@@ -21,8 +21,8 @@ public class AutoAppConfig {
     // 만들어지는 경우가 대부분이다 그렇기에 최근의 스트링 부트에서는 수동 및 자동 빈 등록시 충돌이 생긴다면 오류가 발생하도록
     // 기본값을 바꾸었다 그 설정을 application.properties 에서 디폴트 값을 변경 해줄수 있다.
     // 어설픈 추상화 보다는 명확성을 추구하자.
-    @Bean(name = "memoryMemberRepository")
-    MemberRepository memberRepository() {
-        return new MemoryMemberRepository();
-    }
+//    @Bean(name = "memoryMemberRepository")
+//    MemberRepository memberRepository() {
+//        return new MemoryMemberRepository();
+//    }
 }
